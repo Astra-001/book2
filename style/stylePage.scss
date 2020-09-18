@@ -1,0 +1,313 @@
+$color1:#F96409;
+$color2:#E0DE21;
+$color3:#282828;
+$color:#fff; 
+$color4:rgb(103,155,48);
+$color5:#1B4D59;
+$font1: 'Merriweather', serif;
+$font2:'Montserrat', sans-serif;
+
+body{
+    margin:0;
+    padding:0;
+    //background-color: $color4;
+    box-sizing: border-box;  
+    //overflow: hidden;  
+    #navbar{
+        background-color:$color3;
+        // height: 10vh;
+        //border: 1px solid black;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+
+        #tittle{
+            //border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $font1;
+            // font-size: 50em !important  ;
+            color:$color1;
+            h4{
+                font-size: 30px;
+            }
+            span{
+                color:$color2;
+            }
+            
+            
+        }
+        #navlink{
+            //border: 1px solid salmon;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           ul{
+               list-style: none;
+               display: flex;
+               padding: 0;
+               margin: 0;
+               
+               li{
+                   // background-color: #F96409;
+                    margin: 0 1rem 0 1rem;
+                    font-family: $font2;
+                    a{
+                        text-decoration: none;
+                        color: #E0DE21;
+                        padding: 0.5rem;
+                        font-size: 15px;
+                        border-radius: 0.2rem;
+                        
+                    }
+                    a:hover {
+                        background-color: $color1;
+                    }
+                  
+               }
+               @media(max-width: 613px){
+                background-color: red;
+                display: block;
+                position: absolute;
+                top:2.4rem;
+                right:-1px;
+                // padding: 0;
+                display: none;
+                overflow: hidden;
+                height:22vh;
+                margin: 0;
+                z-index: 1000;
+                
+            }
+         }
+           #bars{
+               display: none;
+               color:$color2;
+               @media (max-width:613px){
+                   display: flex;
+               }
+           }
+        }
+    }
+    #banner{
+
+        .img-Box{
+            width:100%;
+            height:auto;
+            img{
+                width: 100%;
+                height: inherit;
+                // object-position: center;
+                // object-fit: cover;
+            }
+        }    
+
+    }
+    #store{
+        //background-color: $color3;
+
+        #BookstoreTittle{
+            padding: 1rem;
+            //border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            .tittleOne{
+                //border: 2px solid red;
+                
+                #tName{
+                   //background-color: grey;
+                    border-bottom: 2px solid $color3;
+                    margin: 1rem;
+                    text-align: center;
+                    font-family: $font2;
+                    font-size: bold;
+                    color:$color1;
+                }
+                #cardArea{
+                    //border: 1px solid red;
+
+                    padding: 1rem 1rem;
+                    // margin: 1rem;
+                    .card1{
+                        //border: 1px solid red;
+                        margin:10px;
+                        position: relative;
+                        //border: 1px solid rgb(172, 166, 166);
+                        box-shadow: 1px  2px wheat,-1px  1px wheat;
+                        #DescBook{
+                            padding: 0.5rem 5px;
+                            
+                            border: 1px solid lawngreen;
+                            p{
+                                @media (max-width:829px) {
+                                    font-size: 12px;
+
+                                    //background-color: red;
+                                }
+                            }
+                            .one{
+                                display: flex;
+                                //border: 1px solid red;
+                                padding: 0;
+                                margin: 0;
+                            }
+                            span{
+                                font-family: $font2;
+                                @media (max-width:765px){
+                                    font-size: 1rem;
+                                }
+                            }
+                            .bookButton{
+                                //border: 1px solid $color1;
+                                display: flex;
+                                justify-content: space-between;
+                                // justify-content: center;
+                                align-items: center;
+                                padding: 0 0.4rem;
+                                a{
+                                    background-color:$color4;
+                                    color: $color;
+                                    padding: 0 0.4rem;
+                                    border-radius: 5px;
+                                    font-family: $font2;
+                                    text-decoration: none;
+                                    font-size: 1rem;
+                                    display: flex;
+                                    justify-content: center;
+                                @media (max-width:320px){
+                                    font-size:20px;
+                                }
+                                }
+                                a:hover{
+                                    background-color: $color1;
+                                }
+                               
+                                
+                            }
+                        }
+                        .cardhover{
+                        z-index: 0;
+                        background-color:transparentize($color: #000000, $amount: 0.1);
+                        position: absolute;
+                        top:0px;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5px;
+                        display: none;
+                        justify-content: center;
+                        align-items: center;
+                        a{
+                            font-family: $font2;
+                            color: $color;
+                            border: 1px solid $color1;                        
+                            border-radius: 1px;
+                            
+
+                        }
+                        a:hover{
+                            background-color: $color4;
+                            border: none;
+                        }
+                       }
+                        
+                    }
+                    .card1:hover{
+                        .cardhover{
+                            display: flex;
+                        }
+                    }
+                   
+                    
+                }
+
+            }
+            #sidebar{
+                //border: 1px solid  red;
+                padding: 0;
+                @media (max-width:959px){
+                position: absolute;
+                top:1.7rem;
+                right:5rem;
+                width:inherit;
+                }
+                @media (max-width:621px){
+                    position: absolute;
+                    top:1.5rem;
+                    right:5rem;
+                    width:auto;
+                }
+                @media (max-width:425px){
+                    top:4.5rem;
+                    right:9.5rem;
+                    width:auto;
+                }
+                @media (max-width:375px){
+                    top:4.5rem;
+                    right:7.8rem;
+                    width:auto;
+                    
+                    }
+                @media (max-width:320px){
+                    top:4.5rem;
+                    right:7rem;
+                    width:auto;
+                    
+                    }
+                #button{
+                    background-color: $color4;
+                    //border: 1px solid red;
+                    width: inherit;
+                    
+                   button{
+                       //border: 1px solid red;
+                       width: inherit;
+                       color: #fff;
+                       font-weight: bold;
+                       font-family: $font1;
+                       @media (max-width:425px){
+                       font-size: 12px;
+                       }
+                       @media (max-width:320px){
+                        font-size: 8px;
+                        
+                        }
+                        
+                    }  
+                   .dropdown-menu{
+                       width:100%;
+                       max-width: 50%;
+                       padding: 0;
+                       
+                       font-family: $font2;
+
+                       @media (max-width:425px) {
+                           border: 1px solid red;
+                           width: 10vw;
+                           
+                       }
+                      
+                   }
+               }
+            }
+        }
+       
+        
+    }
+    #bottom{
+        //border: 1px solid red;
+        background-color:$color;
+        p{
+            font-size: 12px;
+            color:$color1;
+            padding: 2rem;
+            font-weight: $font2;
+            font-size: 15px;
+            @media (max-width:425px){
+                font-size: 8px;
+            }
+        }
+    }
+    
+}

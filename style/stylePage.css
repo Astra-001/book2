@@ -1,0 +1,352 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body #navbar {
+  background-color: #282828;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+body #navbar #tittle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Merriweather", serif;
+  color: #F96409;
+}
+
+body #navbar #tittle h4 {
+  font-size: 30px;
+}
+
+body #navbar #tittle span {
+  color: #E0DE21;
+}
+
+body #navbar #navlink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #navbar #navlink ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+body #navbar #navlink ul li {
+  margin: 0 1rem 0 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+body #navbar #navlink ul li a {
+  text-decoration: none;
+  color: #E0DE21;
+  padding: 0.5rem;
+  font-size: 15px;
+  border-radius: 0.2rem;
+}
+
+body #navbar #navlink ul li a:hover {
+  background-color: #F96409;
+}
+
+@media (max-width: 613px) {
+  body #navbar #navlink ul {
+    background-color: red;
+    display: block;
+    position: absolute;
+    top: 2.4rem;
+    right: -1px;
+    display: none;
+    overflow: hidden;
+    height: 22vh;
+    margin: 0;
+    z-index: 1000;
+  }
+}
+
+body #navbar #navlink #bars {
+  display: none;
+  color: #E0DE21;
+}
+
+@media (max-width: 613px) {
+  body #navbar #navlink #bars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+body #banner .img-Box {
+  width: 100%;
+  height: auto;
+}
+
+body #banner .img-Box img {
+  width: 100%;
+  height: inherit;
+}
+
+body #store #BookstoreTittle {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+body #store #BookstoreTittle .tittleOne #tName {
+  border-bottom: 2px solid #282828;
+  margin: 1rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: bold;
+  color: #F96409;
+}
+
+body #store #BookstoreTittle .tittleOne #cardArea {
+  padding: 1rem 1rem;
+}
+
+body #store #BookstoreTittle .tittleOne #cardArea .card1 {
+  margin: 10px;
+  position: relative;
+  -webkit-box-shadow: 1px  2px wheat,-1px  1px wheat;
+          box-shadow: 1px  2px wheat,-1px  1px wheat;
+}
+
+body #store #BookstoreTittle .tittleOne #cardArea .card1 #DescBook {
+  padding: 0.5rem 5px;
+  border: 1px solid lawngreen;
+}
+
+@media (max-width: 829px) {
+  body #store #BookstoreTittle .tittleOne #cardArea .card1 #DescBook p {
+    font-size: 12px;
+  }
+}
+
+body #store #BookstoreTittle .tittleOne #cardArea .card1 #DescBook .one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+body #store #BookstoreTittle .tittleOne #cardArea .card1 #DescBook span {
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 765px) {
+  body #store #BookstoreTittle .tittleOne #cardArea .card1 #DescBook span {
+    font-size: 1rem;
+  }
+}
+
+body #store #BookstoreTittle .tittleOne #cardArea .card1 #DescBook .bookButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0.4rem;
+}
+
+body #store #BookstoreTittle .tittleOne #cardArea .card1 #DescBook .bookButton a {
+  background-color: #679b30;
+  color: #fff;
+  padding: 0 0.4rem;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 320px) {
+  body #store #BookstoreTittle .tittleOne #cardArea .card1 #DescBook .bookButton a {
+    font-size: 20px;
+  }
+}
+
+body #store #BookstoreTittle .tittleOne #cardArea .card1 #DescBook .bookButton a:hover {
+  background-color: #F96409;
+}
+
+body #store #BookstoreTittle .tittleOne #cardArea .card1 .cardhover {
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #store #BookstoreTittle .tittleOne #cardArea .card1 .cardhover a {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  border: 1px solid #F96409;
+  border-radius: 1px;
+}
+
+body #store #BookstoreTittle .tittleOne #cardArea .card1 .cardhover a:hover {
+  background-color: #679b30;
+  border: none;
+}
+
+body #store #BookstoreTittle .tittleOne #cardArea .card1:hover .cardhover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #store #BookstoreTittle #sidebar {
+  padding: 0;
+}
+
+@media (max-width: 959px) {
+  body #store #BookstoreTittle #sidebar {
+    position: absolute;
+    top: 1.7rem;
+    right: 5rem;
+    width: inherit;
+  }
+}
+
+@media (max-width: 621px) {
+  body #store #BookstoreTittle #sidebar {
+    position: absolute;
+    top: 1.5rem;
+    right: 5rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  body #store #BookstoreTittle #sidebar {
+    top: 4.5rem;
+    right: 9.5rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  body #store #BookstoreTittle #sidebar {
+    top: 4.5rem;
+    right: 7.8rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  body #store #BookstoreTittle #sidebar {
+    top: 4.5rem;
+    right: 7rem;
+    width: auto;
+  }
+}
+
+body #store #BookstoreTittle #sidebar #button {
+  background-color: #679b30;
+  width: inherit;
+}
+
+body #store #BookstoreTittle #sidebar #button button {
+  width: inherit;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Merriweather", serif;
+}
+
+@media (max-width: 425px) {
+  body #store #BookstoreTittle #sidebar #button button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  body #store #BookstoreTittle #sidebar #button button {
+    font-size: 8px;
+  }
+}
+
+body #store #BookstoreTittle #sidebar #button .dropdown-menu {
+  width: 100%;
+  max-width: 50%;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 425px) {
+  body #store #BookstoreTittle #sidebar #button .dropdown-menu {
+    border: 1px solid red;
+    width: 10vw;
+  }
+}
+
+body #bottom {
+  background-color: #fff;
+}
+
+body #bottom p {
+  font-size: 12px;
+  color: #F96409;
+  padding: 2rem;
+  font-weight: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+@media (max-width: 425px) {
+  body #bottom p {
+    font-size: 8px;
+  }
+}
+/*# sourceMappingURL=stylePage.css.map */
